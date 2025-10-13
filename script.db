@@ -1,0 +1,10 @@
+CREATE TABLE `products` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) DEFAULT NULL,
+  `image_url` VARCHAR(255) NOT NULL,
+  `video_url` VARCHAR(255) NOT NULL,
+  `image_public_id` VARCHAR(100) DEFAULT NULL,
+  `video_public_id` VARCHAR(100) DEFAULT NULL,
+  `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+);
