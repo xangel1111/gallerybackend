@@ -12,11 +12,8 @@ app.use(cors({
     'https://galleryclient.vercel.app',
     'http://localhost:3000'
   ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
-
-app.options('*', cors());
 
 app.use("/api/products", productRoutes);
 
