@@ -16,6 +16,8 @@ app.use(cors({
   credentials: true
 }));
 
+app.options('*', cors());
+
 app.use("/api/products", productRoutes);
 
 app.use(express.json());
