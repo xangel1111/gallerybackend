@@ -139,7 +139,7 @@ export const updateProduct = async (req, res) => {
 
       const image = await uploadFromBuffer(
         req.files.image[0].buffer,
-        { folder: 'gallery/images' }
+        { folder: 'gallery/thumbs' }
       );
 
       image_url = image.secure_url;
